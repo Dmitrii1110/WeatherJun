@@ -13,6 +13,9 @@
 		B2DFD05627B436AB00CF7C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFD05427B436AB00CF7C22 /* Main.storyboard */; };
 		B2DFD05827B436AE00CF7C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DFD05727B436AE00CF7C22 /* Assets.xcassets */; };
 		B2DFD05B27B436AE00CF7C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DFD05927B436AE00CF7C22 /* LaunchScreen.storyboard */; };
+		B2DFD06527B4397300CF7C22 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD06427B4397300CF7C22 /* ListTVC.swift */; };
+		B2DFD06A27B5090A00CF7C22 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD06927B5090A00CF7C22 /* Constant.swift */; };
+		B2DFD06C27B50D5400CF7C22 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD06B27B50D5400CF7C22 /* NetworkWeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		B2DFD05727B436AE00CF7C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2DFD05A27B436AE00CF7C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2DFD05C27B436AE00CF7C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DFD06427B4397300CF7C22 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
+		B2DFD06927B5090A00CF7C22 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B2DFD06B27B50D5400CF7C22 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		B2DFD04D27B436AB00CF7C22 /* WeatherJun */ = {
 			isa = PBXGroup;
 			children = (
+				B2DFD06627B5083900CF7C22 /* Model */,
+				B2DFD06727B5085100CF7C22 /* View */,
+				B2DFD06827B5085C00CF7C22 /* Supporting files */,
+			);
+			path = WeatherJun;
+			sourceTree = "<group>";
+		};
+		B2DFD06627B5083900CF7C22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2DFD06B27B50D5400CF7C22 /* NetworkWeatherManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2DFD06727B5085100CF7C22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2DFD06427B4397300CF7C22 /* ListTVC.swift */,
+				B2DFD05927B436AE00CF7C22 /* LaunchScreen.storyboard */,
+				B2DFD05427B436AB00CF7C22 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2DFD06827B5085C00CF7C22 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				B2DFD04E27B436AB00CF7C22 /* AppDelegate.swift */,
 				B2DFD05027B436AB00CF7C22 /* SceneDelegate.swift */,
 				B2DFD05227B436AB00CF7C22 /* ViewController.swift */,
-				B2DFD05427B436AB00CF7C22 /* Main.storyboard */,
 				B2DFD05727B436AE00CF7C22 /* Assets.xcassets */,
-				B2DFD05927B436AE00CF7C22 /* LaunchScreen.storyboard */,
 				B2DFD05C27B436AE00CF7C22 /* Info.plist */,
+				B2DFD06927B5090A00CF7C22 /* Constant.swift */,
 			);
-			path = WeatherJun;
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DFD05327B436AB00CF7C22 /* ViewController.swift in Sources */,
+				B2DFD06527B4397300CF7C22 /* ListTVC.swift in Sources */,
+				B2DFD06A27B5090A00CF7C22 /* Constant.swift in Sources */,
+				B2DFD06C27B50D5400CF7C22 /* NetworkWeatherManager.swift in Sources */,
 				B2DFD04F27B436AB00CF7C22 /* AppDelegate.swift in Sources */,
 				B2DFD05127B436AB00CF7C22 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,12 +327,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LDWUP27AK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherJun/Info.plist;
+				INFOPLIST_FILE = "WeatherJun/Supporting files/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,12 +356,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9LDWUP27AK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherJun/Info.plist;
+				INFOPLIST_FILE = "WeatherJun/Supporting files/info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
