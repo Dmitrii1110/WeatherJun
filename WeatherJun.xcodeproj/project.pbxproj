@@ -18,6 +18,8 @@
 		B2DFD06C27B50D5400CF7C22 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD06B27B50D5400CF7C22 /* NetworkWeatherManager.swift */; };
 		B2DFD06E27B50F8600CF7C22 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD06D27B50F8600CF7C22 /* WeatherData.swift */; };
 		B2DFD07027B5288000CF7C22 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD06F27B5287F00CF7C22 /* Weather.swift */; };
+		B2DFD07227B550C300CF7C22 /* GetCitiesWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD07127B550C300CF7C22 /* GetCitiesWeather.swift */; };
+		B2DFD07427B6417200CF7C22 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DFD07327B6417200CF7C22 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B2DFD06B27B50D5400CF7C22 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		B2DFD06D27B50F8600CF7C22 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		B2DFD06F27B5287F00CF7C22 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B2DFD07127B550C300CF7C22 /* GetCitiesWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCitiesWeather.swift; sourceTree = "<group>"; };
+		B2DFD07327B6417200CF7C22 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 				B2DFD06B27B50D5400CF7C22 /* NetworkWeatherManager.swift */,
 				B2DFD06D27B50F8600CF7C22 /* WeatherData.swift */,
 				B2DFD06F27B5287F00CF7C22 /* Weather.swift */,
+				B2DFD07127B550C300CF7C22 /* GetCitiesWeather.swift */,
+				B2DFD07327B6417200CF7C22 /* ListCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,10 +186,12 @@
 				B2DFD07027B5288000CF7C22 /* Weather.swift in Sources */,
 				B2DFD05327B436AB00CF7C22 /* ViewController.swift in Sources */,
 				B2DFD06527B4397300CF7C22 /* ListTVC.swift in Sources */,
+				B2DFD07427B6417200CF7C22 /* ListCell.swift in Sources */,
 				B2DFD06E27B50F8600CF7C22 /* WeatherData.swift in Sources */,
 				B2DFD06A27B5090A00CF7C22 /* Constant.swift in Sources */,
 				B2DFD06C27B50D5400CF7C22 /* NetworkWeatherManager.swift in Sources */,
 				B2DFD04F27B436AB00CF7C22 /* AppDelegate.swift in Sources */,
+				B2DFD07227B550C300CF7C22 /* GetCitiesWeather.swift in Sources */,
 				B2DFD05127B436AB00CF7C22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

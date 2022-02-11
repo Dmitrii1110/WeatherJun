@@ -48,8 +48,8 @@ struct Day: Decodable {
     let tempMax: Int?
     
     enum CodingKeys: String, CodingKey {
-        case tempMin = "tempMin"
-        case tempMax = "tempMax"
+        case tempMin = "temp_min"
+        case tempMax = "temp_max"
         
     }
 }
